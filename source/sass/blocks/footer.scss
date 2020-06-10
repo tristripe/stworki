@@ -85,6 +85,13 @@
     li a {
       text-decoration: none;
       color: $white;
+      transition: 0.3s;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $light-blue;
+      }
     }
   }
 }
@@ -117,6 +124,42 @@
     margin-bottom: 22px;
     text-decoration: none;
     color: $white;
+    transition: 0.3s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $light-blue;
+    }
+  }
+}
+
+.footer__link {
+  position: relative;
+
+
+  &--address {
+    &::before {
+      content: 'A.';
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  &--phone {
+    &::before {
+      content: 'T.';
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  &--email {
+    &::before {
+      content: 'E';
+      position: absolute;
+      left: 0;
+    }
   }
 }
 

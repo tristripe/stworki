@@ -73,5 +73,13 @@
     display: block;
     padding: 40px;
     text-align: center;
+    transition: 0.3s;
+    outline: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $client-hover;
+    }
   }
 }

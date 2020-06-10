@@ -6,7 +6,10 @@
     const emailInput = document.querySelector('#email');
     const inputs = document.querySelectorAll('input:not([type="submit"])');
     const form = document.querySelector('.contact form');
-
+    const success = document.querySelector('.popup__success');
+    const submit = document.querySelector('.button--submit');
+    const contact = document.querySelector('.contact');
+    const popup = document.querySelector('.popup');
 
     function CustomValidation(input) {
       this.invalidities = [];
@@ -45,8 +48,8 @@
               requirementElement.classList.add('contact__valid');
             }
 
-          } // end if
-        } // end for
+          }
+        }
       },
 
       checkInput: function() {
@@ -99,21 +102,44 @@
       element: document.querySelector('label[for="email"] .contact__requirements li:nth-child(1)')
     }];
 
+
+
     usernameInput.CustomValidation = new CustomValidation(usernameInput);
     usernameInput.CustomValidation.validityChecks = usernameValidityChecks;
     emailInput.CustomValidation = new CustomValidation(emailInput);
     emailInput.CustomValidation.validityChecks = emailValidityChecks;
 
-    function validate() {
+    const successHandler = function (evt) {
+      contact.classList.add('visually-hidden');
+      success.classList.remove('visually-hidden');
+      console.log('Success');
+      setTimeout(resetState, 3000);
+    }
+
+    const resetState = function () {
+      contact.classList.remove('visually-hidden');
+      success.classList.add('visually-hidden');
+      popup.classList.remove('popup--active');
+    }
+
+    const errorHandler = function (evt) {
+      console.log('Error');
+    }
+
+    function validate(evt) {
       for (var i = 0; i < inputs.length; i++) {
         inputs[i].CustomValidation.checkInput();
       }
     }
 
+    form.addEventListener('submit', function (evt) {
+      evt.preventDefault();
+      window.backend.save(new FormData(form), successHandler, errorHandler);
 
-    const submit = document.querySelector('.button--submit');
+    });
+
+
     submit.addEventListener('click', validate);
-    form.addEventListener('submit', validate);
   }
 
   validate();

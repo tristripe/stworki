@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
   <meta charset="UTF-8">
@@ -15,7 +15,12 @@
       <a href="#" class="header__logo">
         <img src="img/logo-icon.svg" alt="Digital template logo" width="48" height="48" title="Digital template logo">
       </a>
-      <button class="header__toggle" type="button" aria-label="Открыть меню">button</button>
+      <div class="header__toggle" tabindex="0">
+        <input type="checkbox" class="visually-hidden" id="burger-menu">
+        <label for="burger-menu">
+          <span></span>
+        </label>
+      </div>
     </div>
   </header>
   <main>
@@ -27,7 +32,7 @@
           <button class="button button--lead" type="button">See Our Project</button>
         </div>
         <div class="lead__image-wrapper">
-          <img src="img/lead.png" alt="Lead image" width="688" height="624" title="Lead image">
+          <img src="img/lead@1x.png" srcset="img/lead@1x.png 1x, img/lead@2x.png 2x" alt="Lead image" width="688" height="624" title="Lead image">
         </div>
       </div>
     </section>
@@ -37,7 +42,7 @@
           <h2>What we do to help our client grow in digital era,</h2>
           <div class="advantages__item">
             <div class="advantages__image-wrapper">
-              <img src="img/advantages-2.png" alt="Business" width="192" height="132" title="Technology">
+              <img src="img/advantages-2@1x.png" srcset="img/advantages-2@1x.png 1x, img/advantages-2@2x.png 2x" alt="Business" width="192" height="132" title="Technology">
             </div>
             <h3>Make Your business To Be Better Famous In Internet</h3>
 
@@ -48,7 +53,7 @@
         <div class="advantages__section">
           <div class="advantages__item">
             <div class="advantages__image-wrapper advantages__top">
-              <img src="img/advantages-1.png" alt="Technology" width="255" height="208">
+              <img src="img/advantages-1.png" srcset="img/advantages-1@1x.png 1x, img/advantages-1@2x.png 2x" alt="Technology" width="255" height="208">
             </div>
             <h3>Bring Technology To Your Comfrotable Home</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -56,7 +61,7 @@
           </div>
           <div class="advantages__item">
             <div class="advantages__image-wrapper advantages__right">
-              <img src="img/advantages-3.png" alt="Digital Product" width="171" height="132">
+              <img src="img/advantages-3.png" srcset="img/advantages-3@1x.png 1x, img/advantages-3@2x.png 2x" alt="Digital Product" width="171" height="132">
             </div>
             <h3>Build Your Digital Product That Suitable For Your Need</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -72,14 +77,14 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
         <ul class="clients__list">
-          <li><a href="">LOGO CLIENT 1</a></li>
-          <li><a href="">LOGO CLIENT 2</a></li>
-          <li><a href="">LOGO CLIENT 3</a></li>
-          <li><a href="">LOGO CLIENT 4</a></li>
-          <li><a href="">LOGO CLIENT 5</a></li>
-          <li><a href="">LOGO CLIENT 6</a></li>
-          <li><a href="">LOGO CLIENT 7</a></li>
-          <li><a href="">More Client</a></li>
+          <li><a href="#">LOGO CLIENT 1</a></li>
+          <li><a href="#">LOGO CLIENT 2</a></li>
+          <li><a href="#">LOGO CLIENT 3</a></li>
+          <li><a href="#">LOGO CLIENT 4</a></li>
+          <li><a href="#">LOGO CLIENT 5</a></li>
+          <li><a href="#">LOGO CLIENT 6</a></li>
+          <li><a href="#">LOGO CLIENT 7</a></li>
+          <li><a href="#">More Client</a></li>
         </ul>
       </div>
     </section>
@@ -96,12 +101,12 @@
         </section>
         <section class="footer__data">
           <div class="footer__address">
-            <a href="" class="footer__logo">
+            <a href="#" class="footer__logo">
               <img src="img/logo-footer-icon.svg" alt="Digital template logo" width="48" height="48" title="Digital template logo">
               <span>Afrianska</span>
             </a>
             <nav class="footer__nav">
-              <a href="" class="footer__link footer__link--address">
+              <a href="#" class="footer__link footer__link--address">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </a>
               <a href="tel:+6281273134321" class="footer__link footer__link--phone">
@@ -132,6 +137,7 @@
           </div>
         </section>
         <section class="footer__copyright container container--footer">
+          <h2 class="visually-hidden">Developers</h2>
           <p>2019 © Afrianska. All rights reserved.</p>
         </section>
       </div>
@@ -142,7 +148,7 @@
       <div class="popup__overlay"></div>
       <div class="popup__content">
         <div class="popup__success visually-hidden">
-          <h2>Форма успешно отправлена!</h2>
+          <h3>Форма успешно отправлена!</h3>
           <p>Спасибо за Ваш отзыв!</p>
         </div>
         <div class="contact">
@@ -152,18 +158,18 @@
             <label for="username">
               Full Name
               <input type="text" id="username" name="name" placeholder="Your Name" minlength="2" maxlength="20" required="">
-              <ul class="contact__requirements">
-                <li>Не менее 2 символов</li>
-                <li>Может содержать только буквы и цифры</li>
-              </ul>
             </label>
+            <ul class="contact__requirements">
+              <li>Не менее 2 символов</li>
+              <li>Может содержать только буквы и цифры</li>
+            </ul>
             <label for="email">
               Email
               <input type="text" id="email" name="email" placeholder="Your Email" required="">
-              <ul class="contact__requirements">
-                <li>Пример: example@yandex.ru</li>
-              </ul>
             </label>
+            <ul class="contact__requirements">
+              <li>Пример: example@yandex.ru</li>
+            </ul>
             <label>
               Message
               <textarea name="message" cols="30" rows="3" placeholder="Your Message"></textarea>

@@ -12,6 +12,8 @@
   border: 1px solid $light-blue;
   min-width: 220px;
   min-height: 56px;
+  outline: none;
+  transition: 0.3s;
 
   &--lead {
     box-shadow: $button-box-shadow;
@@ -21,6 +23,13 @@
     text-transform: uppercase;
     min-height: 72px;
     box-shadow: $submit-box-shadow;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $burger-color;
+    border-color: $burger-color;
   }
 }
 

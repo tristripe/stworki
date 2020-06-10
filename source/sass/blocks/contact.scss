@@ -43,14 +43,15 @@
     padding: 25px 21px 26px 42px;
   }
 
-  input:not([type="submit"]) + .contact__requirements {
+  label ~ .contact__requirements {
     overflow: hidden;
     max-height: 0;
     transition: max-height 1s ease-out;
   }
 
-  input:not([type="submit"]):focus + .contact__requirements,
-  input:not([type="submit"]):active + .contact__requirements {
+  label:focus ~ .contact__requirements,
+  label:active ~ .contact__requirements,
+  label:focus-within ~ .contact__requirements {
     max-height: 1000px;
     transition: max-height 1s ease-in;
   }
@@ -93,7 +94,7 @@
 .contact__requirements {
   font-size: 14px;
   padding-left: 17px;
-  margin: 10px 0 0 0;
+  margin: 0 0 10px 0;
 }
 
 .contact__valid {

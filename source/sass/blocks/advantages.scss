@@ -101,10 +101,39 @@
   }
 
   a {
+    position: relative;
     font-size: 14px;
     line-height: 30px;
     letter-spacing: 0.05em;
     color: $light-blue;
     text-decoration: none;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $burger-color;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      border: solid $light-blue;
+      border-width: 0 2px 2px 0;
+      padding: 4px;
+      transform: rotate(-45deg);
+      top: 11px;
+      left: 110px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 13px;
+      background-color: $light-blue;
+      top: 15px;
+      left: 107px;
+    }
   }
 }
