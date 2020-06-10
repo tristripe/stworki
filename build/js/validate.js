@@ -81,7 +81,7 @@
           return input.value.length < 2;
         },
         invalidityMessage: 'Не меньше 2 символов',
-        element: document.querySelector('label[for="username"] .contact__requirements li:nth-child(1)')
+        element: document.querySelector('label[for="username"] + .contact__requirements li:nth-child(1)')
       },
       {
         isInvalid: function(input) {
@@ -89,7 +89,7 @@
           return illegalCharacters ? true : false;
         },
         invalidityMessage: 'Только цифры и буквы',
-        element: document.querySelector('label[for="username"] .contact__requirements li:nth-child(2)')
+        element: document.querySelector('label[for="username"] + .contact__requirements li:nth-child(2)')
       }
     ];
 
@@ -99,7 +99,7 @@
         return emailPattern ? false : true;
       },
       invalidityMessage: 'Пример почты: example@yandex.ru',
-      element: document.querySelector('label[for="email"] .contact__requirements li:nth-child(1)')
+      element: document.querySelector('label[for="email"] + .contact__requirements li:nth-child(1)')
     }];
 
 
