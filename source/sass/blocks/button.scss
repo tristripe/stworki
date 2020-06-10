@@ -1,0 +1,30 @@
+.button {
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: top;
+  color: $white;
+  font-family: $gilroy;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  background-color: $light-blue;
+  border: 1px solid $light-blue;
+  min-width: 220px;
+  min-height: 56px;
+
+  &--lead {
+    box-shadow: $button-box-shadow;
+  }
+
+  &--submit {
+    text-transform: uppercase;
+    min-height: 72px;
+    box-shadow: $submit-box-shadow;
+  }
+}
+
+.button__footer {
+  margin-top: 165px;
+  margin-right: 3px;
+}

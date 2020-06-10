@@ -1,0 +1,154 @@
+.footer {
+  &--blue {
+    background-color: $light-blue;
+  }
+}
+
+.footer__wrapper {
+  background-color: $blue;
+  margin-right: 95px;
+  border-radius: 0 200px 0 0;
+  padding-bottom: 60px;
+}
+
+.footer__text-content {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  margin-left: 22px;
+
+  h2 {
+    font-family: $gilroy;
+    font-weight: $semi-bold;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: $white;
+    margin-top: 90px;
+    margin-bottom: 17px;
+    width: 400px;
+  }
+
+  p {
+    font-family: $gilroy;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: $white;
+    opacity: 0.6;
+  }
+}
+
+.footer__feedback {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 83px;
+}
+
+.footer__data {
+  position: relative;
+  display: flex;
+  font-family: $gilroy;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  width: 840px;
+  padding-top: 96px;
+  padding-bottom: 43px;
+  margin: 0 auto;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '';
+    border-top: 1px solid $white;
+    position: absolute;
+    height: 1px;
+    width: 1075px;
+    opacity: 0.4;
+  }
+
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}
+
+.footer__logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+
+  img {
+    margin-right: 15px;
+  }
+
+  span {
+    font-family: $gilroy;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    color: $white;
+    font-weight: $semi-bold;
+    margin-bottom: 1px;
+  }
+}
+
+.footer__nav {
+  a {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 22px;
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+.footer__block {
+  margin-right: 77px;
+  h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: $white;
+    font-weight: $semi-bold;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+  }
+
+  ul li {
+    margin-bottom: 16px;
+  }
+}
+
+.footer__address {
+  margin-right: 100px;
+}
+
+.footer__copyright {
+  p {
+    font-family: $gilroy;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    opacity: 0.4;
+    color: $white;
+    margin: 0 0 0 22px;
+  }
+}

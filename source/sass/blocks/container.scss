@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+
+  &--footer {
+    max-width: 885px;
+  }
+
+  &--contact {
+    max-width: 940px;
+  }
+}

@@ -1,3 +1,15 @@
-h1 {
-  color: red;
-}
+@import 'general/normalize';
+@import 'general/fonts';
+@import 'general/variables';
+@import 'general/global';
+@import 'general/mixins';
+@import 'general/popup';
+
+@import 'blocks/header';
+@import 'blocks/container';
+@import 'blocks/lead';
+@import 'blocks/advantages';
+@import 'blocks/clients';
+@import 'blocks/footer';
+@import 'blocks/button';
+@import 'blocks/contact';

@@ -1,0 +1,10 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin padding-1366 {
+  padding-left: $padding-1366;
+  padding-right: $padding-1366;
+}

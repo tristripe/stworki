@@ -1,0 +1,42 @@
+.lead {
+  background-color: $white;
+  background: $lead-bg;
+  padding-bottom: 52px;
+
+  h2 {
+    font-family: $galien;
+    font-size: 64px;
+    line-height: 74px;
+    font-weight: $bold;
+    letter-spacing: 0.04em;
+    color: $dark-blue;
+    width: 515px;
+    margin-bottom: 42px;
+  }
+
+  p {
+    font-family: $gilroy;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: $regular;
+    letter-spacing: 0.05em;
+    color: $dark-blue;
+    width: 430px;
+    margin-bottom: 75px;
+  }
+}
+
+.lead__wrapper {
+  display: flex;
+  @include padding-1366;
+}
+
+.lead__content {
+  margin-top: 34px;
+  margin-left: 130px;
+}
+
+.lead__image-wrapper img {
+  margin-top: -3px;
+  margin-left: -72px;
+}

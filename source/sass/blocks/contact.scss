@@ -1,0 +1,105 @@
+.contact {
+  padding-top: 58px;
+  padding-bottom: 95px;
+  background-color: $white;
+  max-width: 540px;
+  position: relative;
+}
+
+.contact {
+  padding: 53px 56px 56px 56px;
+  box-shadow: $form-box-shadow;
+  border-radius: 10px;
+
+  form, label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: 31px;
+  }
+
+  input,
+  textarea {
+    width: 428px;
+    border: 1px solid $light-gray;
+    border-radius: 10px;
+    margin-top: 9px;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $blue;
+    }
+
+    &:valid {
+      border-color: green;
+    }
+
+  }
+
+  input {
+    padding: 25px 21px 26px 42px;
+  }
+
+  input:not([type="submit"]) + .contact__requirements {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s ease-out;
+  }
+
+  input:not([type="submit"]):focus + .contact__requirements,
+  input:not([type="submit"]):active + .contact__requirements {
+    max-height: 1000px;
+    transition: max-height 1s ease-in;
+  }
+
+  ::-webkit-input-placeholder {
+    font-family: $gilroy;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: $dark-blue;
+    opacity: 0.2;
+  }
+
+  textarea {
+    padding: 19px 21px 33px 34px;
+    margin-bottom: 42px;
+    resize: none;
+  }
+
+  h3 {
+    font-family: $gilroy;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: $dark-blue;
+    text-transform: uppercase;
+    margin: 0 0 50px 0;
+  }
+
+  label {
+    font-family: $gilroy;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    opacity: 0.8;
+    color: $dark-blue;
+  }
+}
+
+.contact__requirements {
+  font-size: 14px;
+  padding-left: 17px;
+  margin: 10px 0 0 0;
+}
+
+.contact__valid {
+  color: green;
+}
+
+.contact__invalid {
+  color: red;
+}
