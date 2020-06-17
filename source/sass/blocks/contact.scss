@@ -37,6 +37,9 @@
       border-color: green;
     }
 
+    @include adaptive(phone) {
+      width: auto;
+    }
   }
 
   input {
