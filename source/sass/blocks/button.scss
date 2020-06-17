@@ -36,4 +36,11 @@
 .button__footer {
   margin-top: 165px;
   margin-right: 3px;
+
+  @include adaptive(tablet) {
+    margin-top: 30px;
+    margin-right: 0;
+    margin-left: 15px;
+    width: 100%;
+  }
 }

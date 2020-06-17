@@ -5,7 +5,7 @@
 .header__wrapper {
   display: flex;
   justify-content: space-between;
-  @include padding-1366;
+  @include padding-sides;
 }
 
 .header__toggle {

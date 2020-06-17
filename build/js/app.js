@@ -74,7 +74,7 @@
       body.classList.add('scroll-hidden');
     };
 
-    var openFeedback = function openFeedback(evt) {
+    var openFeedback = function openFeedback() {
       openPopupHandler();
       popupClose.addEventListener('click', closePopupHandler);
       document.addEventListener('keydown', isEscEvent);

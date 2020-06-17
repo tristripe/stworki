@@ -2,6 +2,11 @@
   padding-top: 192px;
   padding-bottom: 254px;
 
+    @include adaptive(tablet-900) {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
   h2 {
     font-family: $gilroy;
     font-size: 36px;
@@ -12,6 +17,18 @@
     width: 365px;
     margin-top: 0;
     margin-bottom: 160px;
+
+    @include adaptive(tablet-900) {
+      width: 600px;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 60px;
+    }
+
+    @include adaptive(phone) {
+      width: auto;
+    }
   }
 }
 
@@ -21,6 +38,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include adaptive(tablet) {
+    width: auto;
+    @include padding-sides;
+  }
+
+  @include adaptive(tablet-900) {
+    flex-direction: column;
+  }
 }
 
 .advantages__section {
@@ -35,10 +61,24 @@
     img {
       margin-right: 40px;
     }
+
+    @include adaptive(tablet) {
+      align-self: flex-start;
+    }
+
+    @include adaptive(tablet-900) {
+      align-self: center;
+      margin-right: 0;
+    }
   }
 
   &:last-child {
     align-items: flex-end;
+  }
+
+  @include adaptive(tablet-900) {
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
 
@@ -135,5 +175,15 @@
       top: 15px;
       left: 107px;
     }
+  }
+
+  @include adaptive(tablet-900) {
+    align-self: center;
+    margin-bottom: 50px;
+    width: 600px;
+  }
+
+  @include adaptive(phone) {
+    width: auto;
   }
 }

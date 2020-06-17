@@ -15,7 +15,7 @@
       }
     }
 
-    const closePopupHandler = function () {
+    const closePopupHandler = () => {
       popup.classList.remove('popup--active');
       body.classList.remove('scroll-hidden');
     }
@@ -26,7 +26,7 @@
     }
 
 
-    const openFeedback = function (evt) {
+    const openFeedback = () => {
       openPopupHandler();
       popupClose.addEventListener('click', closePopupHandler);
       document.addEventListener('keydown', isEscEvent);

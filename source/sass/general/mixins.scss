@@ -4,7 +4,55 @@
   list-style: none;
 }
 
-@mixin padding-1366 {
+@mixin adaptive($point) {
+  @if $point == desktop-1280 {
+    @media only screen and (max-width: $desktop-1280) {
+      @content;
+    }
+  }
+
+  @if $point == desktop-1024 {
+    @media only screen and (max-width: $desktop-1024) {
+      @content;
+    }
+  }
+
+  @if $point == tablet-900 {
+    @media only screen and (max-width: $tablet-900) {
+      @content;
+    }
+  }
+
+  @if $point == tablet {
+    @media only screen and (max-width: $tablet) {
+      @content;
+    }
+  }
+
+  @if $point == phone {
+    @media only screen and (max-width: $phone) {
+      @content;
+    }
+  }
+
+  @if $point == phone-min {
+    @media only screen and (max-width: $phone-min) {
+      @content;
+    }
+  }
+}
+
+@mixin padding-sides {
   padding-left: $padding-1366;
   padding-right: $padding-1366;
+
+  @include adaptive(desktop-1280) {
+    padding-right: $padding-1280;
+    padding-left: $padding-1280;
+  }
+
+  @include adaptive(desktop-1024) {
+    padding-right: $padding-1024;
+    padding-left: $padding-1024;
+  }
 }
