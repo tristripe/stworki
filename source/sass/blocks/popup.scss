@@ -1,0 +1,58 @@
+.popup {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 2;
+  transition: $transition-default;
+}
+
+.popup.show {
+  display: block;
+}
+
+.popup__inner {
+  position: relative;
+  width: 620px;
+  margin: 200px auto 0;
+  background-color: $white;
+
+  @media (max-width: $phone) {
+    width: 100%;
+  }
+}
+
+.popup__close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.4;
+}
+
+.popup__wrapper {
+  padding: 30px 70px 45px 40px;
+
+  h3 {
+    font-size: 35px;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 32px;
+    margin: 0;
+  }
+}

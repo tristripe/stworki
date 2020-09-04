@@ -1,46 +1,35 @@
 .button {
-  border-radius: 10px;
-  display: inline-block;
-  vertical-align: top;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 22px 40px 20px;
   color: $white;
-  font-family: $gilroy;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  background-color: $light-blue;
-  border: 1px solid $light-blue;
-  min-width: 220px;
-  min-height: 56px;
-  outline: none;
-  transition: 0.3s;
+  border: 1px solid $cardinal;
+  background-color: $cardinal;
+  border-radius: 30px;
+  transition: $transition-default;
+  text-decoration: none;
 
-  &--lead {
-    box-shadow: $button-box-shadow;
-  }
-
-  &--submit {
-    text-transform: uppercase;
-    min-height: 72px;
-    box-shadow: $submit-box-shadow;
+  @media (max-width: $phone) {
+    padding: 14px 40px 13px;
+    font-size: 13px;
+    line-height: 13px;
   }
 
   &:hover,
-  &:focus,
-  &:active {
-    background-color: $burger-color;
-    border-color: $burger-color;
+  &:focus {
+    background-color: $cardinal-hover;
   }
 }
 
-.button__footer {
-  margin-top: 165px;
-  margin-right: 3px;
+.button__offer {
+  margin-bottom: 30px;
+}
 
-  @include adaptive(tablet) {
-    margin-top: 30px;
-    margin-right: 0;
-    margin-left: 15px;
-    width: 100%;
+.button__products {
+  padding: 20px 40px 19px;
+
+  @media (max-width: $phone) {
+    padding: 13px 40px 12px;
   }
 }

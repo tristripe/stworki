@@ -6,19 +6,19 @@
   var popupInner = document.querySelector('.popup__inner');
   var closeButton = document.querySelector('.popup__close');
 
-  var popupOpenHandler = function popupOpenHandler() {
+  var popupOpenHandler = function () {
     popup.classList.add('show');
     document.addEventListener('keydown', escCloseHandler);
     popup.addEventListener('click', outOfPopupHandler);
   };
 
-  var popupCloseHandler = function popupCloseHandler() {
+  var popupCloseHandler = function () {
     popup.removeEventListener('keydown', escCloseHandler);
     popup.removeEventListener('click', outOfPopupHandler);
     popup.classList.remove('show');
   };
 
-  var outOfPopupHandler = function outOfPopupHandler(evt) {
+  var outOfPopupHandler = function (evt) {
     var isClickInside = popupInner.contains(evt.target);
 
     if (!isClickInside) {
@@ -26,7 +26,7 @@
     }
   };
 
-  var escCloseHandler = function escCloseHandler(evt) {
+  var escCloseHandler = function (evt) {
     if (evt.keyCode === 27) {
       popupCloseHandler();
     }
@@ -36,5 +36,7 @@
     e.preventDefault();
     popupOpenHandler();
   });
+
+
   closeButton.addEventListener('click', popupCloseHandler);
 })();

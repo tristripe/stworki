@@ -1,0 +1,87 @@
+.brand {
+  display: flex;
+  justify-content: flex-end;
+  height: 710px;
+  background-image: url("../img/brand-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 1600px 710px;
+  background-position: center bottom;
+
+  @media (max-width: $tablet-788) {
+    background-image: url("../img/brand-bg--tablet.jpg");
+    background-size: 768px 520px;
+    height: 520px;
+  }
+
+  @media (max-width: $phone) {
+    background-image: url("../img/brand-bg--mobile.jpg");
+    background-size: contain;
+    height: 608px;
+  }
+}
+
+.brand__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media (max-width: $desktop-min) {
+    width: 100%;
+  }
+
+  @media (max-width: $phone) {
+    align-items: flex-start;
+  }
+}
+
+.brand__text-wrapper {
+  flex-basis: 100%;
+  max-width: 100%;
+  width: 500px;
+
+  h2 {
+    font-size: 35px;
+    line-height: 50px;
+    color: $white;
+    font-weight: 700;
+    margin-top: 11px;
+    margin-bottom: 19px;
+  }
+
+  p {
+    margin-top: 0;
+    font-size: 21px;
+    line-height: 34px;
+    color: $white;
+  }
+
+  @media (max-width: $tablet-788) {
+    margin-top: 0;
+    width: 364px;
+
+    h2 {
+      font-size: 30px;
+      line-height: 39px;
+      margin-top: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+
+  @media (max-width: $phone) {
+    h2 {
+      font-size: 24px;
+      line-height: 31px;
+      margin-top: 60px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

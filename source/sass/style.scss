@@ -1,15 +1,16 @@
-@import 'general/normalize';
-@import 'general/fonts';
-@import 'general/variables';
-@import 'general/global';
-@import 'general/mixins';
-@import 'general/popup';
+@import "general/normalize";
+@import "general/variables";
+@import "general/global";
+@import "general/fonts";
+@import "general/container";
 
-@import 'blocks/header';
-@import 'blocks/container';
-@import 'blocks/lead';
-@import 'blocks/advantages';
-@import 'blocks/clients';
-@import 'blocks/footer';
-@import 'blocks/button';
-@import 'blocks/contact';
+
+/* Стили проекта */
+
+@import "blocks/lead";
+@import "blocks/goods";
+@import "blocks/products";
+@import "blocks/brand";
+@import "blocks/button";
+@import "blocks/offer";
+@import "blocks/popup";
