@@ -13,7 +13,8 @@
     height: 520px;
   }
 
-  @media (max-width: $phone) {
+
+  @media (max-width: $phone-min) {
     background-image: url("../img/brand-bg--mobile.jpg");
     background-size: contain;
     height: 608px;

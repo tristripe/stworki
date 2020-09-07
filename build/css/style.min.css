@@ -408,7 +408,7 @@ body {
       width: auto; }
       .container--less-border {
         padding: 0 20px; } }
-  @media (max-width: 48 0px) {
+  @media (max-width: 480px) {
     .container {
       padding: 0 20px; } }
 
@@ -425,10 +425,13 @@ body {
       background-image: url("../img/lead-bg--tablet.jpg");
       background-size: contain;
       padding-top: 20px; } }
-  @media (max-width: 48 0px) {
+  @media (max-width: 480px) {
+    .lead {
+      background-size: 100vw auto; } }
+  @media (max-width: 320px) {
     .lead {
       background-image: url("../img/lead-bg--mobile.jpg");
-      background-size: contain;
+      background-size: 320px 450px;
       padding-top: 3px;
       padding-bottom: 23px; } }
 
@@ -446,7 +449,7 @@ body {
   @media (max-width: 788px) {
     .lead__header {
       margin-bottom: 15px; } }
-  @media (max-width: 48 0px) {
+  @media (max-width: 320px) {
     .lead__header {
       margin-bottom: 207px; } }
 
@@ -458,10 +461,12 @@ body {
   @media (max-width: 788px) {
     .lead__date {
       margin-top: 12px; } }
-  @media (max-width: 48 0px) {
+  @media (max-width: 480px) {
     .lead__date {
       font-size: 16px;
-      line-height: 16px;
+      line-height: 16px; } }
+  @media (max-width: 320px) {
+    .lead__date {
       margin-top: 15px; } }
 
 .lead__title {
@@ -478,12 +483,12 @@ body {
       line-height: 32px;
       width: 400px;
       margin-bottom: 126px; } }
-  @media (max-width: 48 0px) {
+  @media (max-width: 480px) {
     .lead__title {
       font-size: 24px;
       line-height: 24px;
-      width: 250px;
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      width: 250px; } }
 
 .lead__footer {
   position: relative;
@@ -514,7 +519,11 @@ body {
       .lead__footer::after {
         bottom: -15px;
         left: 40%; } }
-  @media (max-width: 48 0px) {
+  @media (max-width: 600px) {
+    .lead__footer::after {
+      left: 35%;
+      bottom: -25px; } }
+  @media (max-width: 480px) {
     .lead__footer::after {
       width: 75px;
       bottom: -38px;
@@ -534,7 +543,10 @@ body {
       .lead__image-wrapper img {
         width: 100%;
         height: auto; } }
-  @media (max-width: 48 0px) {
+  @media (max-width: 600px) {
+    .lead__image-wrapper {
+      width: auto; } }
+  @media (max-width: 480px) {
     .lead__image-wrapper {
       width: 360px;
       overflow: hidden; } }
@@ -561,7 +573,12 @@ body {
       width: 540px; }
       .lead__text-wrapper p:first-child {
         margin-top: -5px; } }
-  @media (max-width: 48 0px) {
+  @media (max-width: 600px) {
+    .lead__text-wrapper {
+      width: auto; }
+      .lead__text-wrapper p {
+        width: 200px; } }
+  @media (max-width: 480px) {
     .lead__text-wrapper {
       width: 100%; }
       .lead__text-wrapper p {
@@ -580,7 +597,7 @@ body {
   .lead__logo img {
     width: 100%;
     height: auto; }
-  @media (max-width: 48 0px) {
+  @media (max-width: 480px) {
     .lead__logo {
       width: 88px;
       height: 20px; } }
@@ -608,7 +625,7 @@ body {
         margin-right: 0; }
       .goods:nth-of-type(4n) {
         margin-right: 20px; } }
-  @media (max-width: 48 0px) {
+  @media (max-width: 480px) {
     .goods {
       width: calc(50% - 5px);
       margin-right: 10px;
@@ -667,7 +684,7 @@ body {
   @media (max-width: 788px) {
     .goods__image-wrapper {
       margin-bottom: 12px; } }
-  @media (max-width: 48 0px) {
+  @media (max-width: 480px) {
     .goods__image-wrapper {
       margin-bottom: 8px; } }
 
@@ -692,7 +709,7 @@ body {
   @media (max-width: 788px) {
     .goods__series {
       margin-bottom: 8px; } }
-  @media (max-width: 48 0px) {
+  @media (max-width: 480px) {
     .goods__series {
       font-size: 13px;
       line-height: 17px;
@@ -704,7 +721,7 @@ body {
   line-height: 16px;
   color: #000000;
   text-align: center; }
-  @media (max-width: 48 0px) {
+  @media (max-width: 480px) {
     .goods__category {
       font-size: 13px;
       line-height: 17px;
@@ -726,7 +743,7 @@ body {
       font-size: 32px;
       line-height: 42px;
       margin-bottom: 30px; } }
-  @media (max-width: 48 0px) {
+  @media (max-width: 480px) {
     .products__title {
       font-size: 18px;
       line-height: 23px;
@@ -769,7 +786,7 @@ body {
       background-image: url("../img/brand-bg--tablet.jpg");
       background-size: 768px 520px;
       height: 520px; } }
-  @media (max-width: 48 0px) {
+  @media (max-width: 320px) {
     .brand {
       background-image: url("../img/brand-bg--mobile.jpg");
       background-size: contain;
@@ -782,7 +799,7 @@ body {
   @media (max-width: 1199px) {
     .brand__wrapper {
       width: 100%; } }
-  @media (max-width: 48 0px) {
+  @media (max-width: 480px) {
     .brand__wrapper {
       -webkit-box-align: start;
           -ms-flex-align: start;
@@ -821,7 +838,7 @@ body {
       .brand__text-wrapper p {
         font-size: 18px;
         line-height: 26px; } }
-  @media (max-width: 48 0px) {
+  @media (max-width: 480px) {
     .brand__text-wrapper h2 {
       font-size: 24px;
       line-height: 31px;
@@ -843,20 +860,21 @@ body {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   text-decoration: none; }
-  @media (max-width: 48 0px) {
+  @media (max-width: 480px) {
     .button {
       padding: 14px 40px 13px;
       font-size: 13px;
       line-height: 13px; } }
   .button:hover, .button:focus {
-    background-color: #ff3658; }
+    background-color: #ff3658;
+    border-color: #ff3658; }
 
 .button__offer {
   margin-bottom: 30px; }
 
 .button__products {
   padding: 20px 40px 19px; }
-  @media (max-width: 48 0px) {
+  @media (max-width: 480px) {
     .button__products {
       padding: 13px 40px 12px; } }
 
@@ -875,7 +893,7 @@ body {
   @media (max-width: 788px) {
     .offer {
       padding-bottom: 40px; } }
-  @media (max-width: 48 0px) {
+  @media (max-width: 480px) {
     .offer {
       padding-bottom: 45px; } }
 
@@ -903,7 +921,7 @@ body {
     .offer__link:hover::before, .offer__link:focus::before {
       height: 0;
       border-bottom: none; }
-  @media (max-width: 48 0px) {
+  @media (max-width: 480px) {
     .offer__link {
       font-size: 13px;
       line-height: 13px; }
@@ -930,7 +948,7 @@ body {
   width: 620px;
   margin: 200px auto 0;
   background-color: #ffffff; }
-  @media (max-width: 48 0px) {
+  @media (max-width: 480px) {
     .popup__inner {
       width: 100%; } }
 
