@@ -29,7 +29,7 @@
   }
 
   @media (max-width: $tablet-788) {
-    margin-bottom: 207px;
+    margin-bottom: 76%;
   }
 }
 
@@ -127,7 +127,7 @@
   display: flex;
   justify-content: center;
 
-  @media (max-width: $tablet-788) {
+  @media (max-width: $desktop-min) {
     width: 600px;
 
     img {
@@ -136,7 +136,7 @@
     }
   }
 
-  @media (max-width: $tablet-600) {
+  @media (max-width: $tablet-788) {
     width: auto;
   }
 
