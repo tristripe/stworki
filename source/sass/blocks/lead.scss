@@ -13,8 +13,12 @@
   }
 
   @media (max-width: $phone) {
+    background-size: 100vw auto;
+  }
+
+  @media (max-width: $phone-min) {
     background-image: url("../img/lead-bg--mobile.jpg");
-    background-size: contain;
+    background-size: 320px 450px;
     padding-top: 3px;
     padding-bottom: 23px;
   }
@@ -30,7 +34,7 @@
     margin-bottom: 15px;
   }
 
-  @media (max-width: $phone) {
+  @media (max-width: $phone-min) {
     margin-bottom: 207px;
   }
 }
@@ -48,6 +52,9 @@
   @media (max-width: $phone) {
     font-size: 16px;
     line-height: 16px;
+  }
+
+  @media (max-width: $phone-min) {
     margin-top: 15px;
   }
 }
@@ -71,8 +78,8 @@
   @media (max-width: $phone) {
     font-size: 24px;
     line-height: 24px;
-    width: 250px;
     margin-bottom: 0;
+    width: 250px;
   }
 }
 
@@ -104,6 +111,13 @@
     }
   }
 
+  @media (max-width: $tablet-600) {
+    &::after {
+      left: 35%;
+      bottom: -25px;
+    }
+  }
+
   @media (max-width: $phone) {
     &::after {
       width: 75px;
@@ -125,6 +139,10 @@
       width: 100%;
       height: auto;
     }
+  }
+
+  @media (max-width: $tablet-600) {
+    width: auto;
   }
 
   @media (max-width: $phone) {
@@ -158,6 +176,16 @@
     p:first-child {
       margin-top: -5px;
     }
+  }
+
+  @media (max-width: $tablet-600) {
+    width: auto;
+
+    p {
+      width: 200px;
+    }
+
+
   }
 
   @media (max-width: $phone) {

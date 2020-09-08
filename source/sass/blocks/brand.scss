@@ -1,11 +1,11 @@
 .brand {
   display: flex;
-  justify-content: flex-end;
   height: 710px;
   background-image: url("../img/brand-bg.jpg");
   background-repeat: no-repeat;
   background-size: 1600px 710px;
   background-position: center bottom;
+  flex-basis: 100%;
 
   @media (max-width: $tablet-788) {
     background-image: url("../img/brand-bg--tablet.jpg");
@@ -13,7 +13,8 @@
     height: 520px;
   }
 
-  @media (max-width: $phone) {
+
+  @media (max-width: $phone-min) {
     background-image: url("../img/brand-bg--mobile.jpg");
     background-size: contain;
     height: 608px;
@@ -22,8 +23,6 @@
 
 .brand__wrapper {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
 
   @media (max-width: $desktop-min) {
     width: 100%;
@@ -35,9 +34,11 @@
 }
 
 .brand__text-wrapper {
-  flex-basis: 100%;
-  max-width: 100%;
   width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  align-self: center;
 
   h2 {
     font-size: 35px;
