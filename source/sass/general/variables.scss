@@ -17,9 +17,10 @@ $transition-default: all 0.2s ease-out;
 
 // media-query
 
+$desktop-max: 1600px;
 $desktop-min: 1199px;
 $tablet: 1024px;
-$tablet-788: 788px;
+$tablet-788: 767px;
 $tablet-600: 600px;
 $phone: 480px;
 $phone-min: 320px;

@@ -1,22 +1,26 @@
 .brand {
   display: flex;
-  height: 710px;
+  height: 840px;
   background-image: url("../img/brand-bg.jpg");
   background-repeat: no-repeat;
-  background-size: 1600px 710px;
+  background-size: cover;
   background-position: center bottom;
   flex-basis: 100%;
 
-  @media (max-width: $tablet-788) {
+  @media (max-width: $desktop-max) {
+    height: 710px;
+  }
+
+  @media (max-width: $desktop-min) {
     background-image: url("../img/brand-bg--tablet.jpg");
-    background-size: 768px 520px;
+    background-size: 100% auto;
     height: 520px;
   }
 
 
-  @media (max-width: $phone-min) {
+  @media (max-width: $tablet-788) {
     background-image: url("../img/brand-bg--mobile.jpg");
-    background-size: contain;
+    background-size: 100% auto;
     height: 608px;
   }
 }
@@ -28,7 +32,7 @@
     width: 100%;
   }
 
-  @media (max-width: $phone) {
+  @media (max-width: $tablet-788) {
     align-items: flex-start;
   }
 }
@@ -56,7 +60,7 @@
     color: $white;
   }
 
-  @media (max-width: $tablet-788) {
+  @media (max-width: $desktop-min) {
     margin-top: 0;
     width: 364px;
 
@@ -72,7 +76,7 @@
     }
   }
 
-  @media (max-width: $phone) {
+  @media (max-width: $tablet-788) {
     h2 {
       font-size: 24px;
       line-height: 31px;
