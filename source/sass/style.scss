@@ -3,14 +3,13 @@
 @import "general/global";
 @import "general/fonts";
 @import "general/container";
-
+@import "general/swiper";
 
 /* Стили проекта */
 
+@import "blocks/banner-main";
 @import "blocks/lead";
-@import "blocks/goods";
-@import "blocks/products";
-@import "blocks/brand";
-@import "blocks/button";
 @import "blocks/offer";
-@import "blocks/popup";
+@import "blocks/goods";
+@import "blocks/product";
+@import "blocks/other-categories";

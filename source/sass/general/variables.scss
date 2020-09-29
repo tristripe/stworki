@@ -1,14 +1,16 @@
 // Font Family
 
-$intro: "Intro Book", "Arial", sans-serif;
+$sfpro: "SF Pro Display", Arial, sans-serif;
 
 
 // Colors
 
 $white: #ffffff;
 $black: #000000;
-$cardinal: #d61e3d;
-$cardinal-hover: #ff3658;
+$gray: #cccccc;
+$green: #375248;
+$light-blue: #84a0b6;
+$dark-black: #353535;
 
 // Animation
 
@@ -20,7 +22,15 @@ $transition-default: all 0.2s ease-out;
 $desktop-max: 1600px;
 $tablet: 1024px;
 $desktop-min: 1023px;
-$tablet-788: 767px;
-$tablet-600: 600px;
+$phone-max: 767px;
 $phone: 480px;
 $phone-min: 320px;
+
+
+// Swiper
+
+$themeColor: #007aff !default;
+$colors: (
+  'white': #ffffff,
+  'black': #000000,
+) !default;

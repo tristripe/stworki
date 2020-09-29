@@ -10,215 +10,353 @@
 </head>
 <body>
 <main>
+  <section class="banner-main">
+    <picture>
+      <source media="(max-width: 767px)" srcset="./img/banner-main--mobile.jpg">
+      <source media="(max-width: 1023px)" srcset="./img/banner-main--tablet.jpg">
+      <img src="./img/banner-main.jpg" alt="Новая коллекция смесителей с бесплатной подпиской на Spotify" width="1440" height="674">
+    </picture>
 
+    <div class="banner-main__content">
+      <div class="banner-main__text-wrapper">
+        <h1>Начни жизнь <br>с чистого лица</h1>
+        <p>
+          Ваша уникальность достойна лучшего обрамления.
+          Создайте индивидуальный интерьер для ванной и
+          туалетной комнаты, наши дизайнеры помогут в этом.
+          Реализация мечты – с «Сантехникой-Онлайн».
+        </p>
+      </div>
+    </div>
+  </section>
   <section class="lead">
     <div class="lead__wrapper container">
-      <div class="lead__header">
-        <a href="#" class="lead__logo">
-          <img
-            src="./img/logo.svg" alt="AM.PM - магазин сантехники"
-            width="177" height="40"
-          />
-        </a>
-        <p class="lead__date">01.09.20 - 31.10.20</p>
+      <div class="lead__image-wrapper">
+
+        <picture>
+          <source media="(max-width: 767px)" srcset="./img/lead-1--mobile.jpg">
+          <source media="(max-width: 1023px)" srcset="./img/lead-1--tablet.jpg">
+          <img src="./img/lead-1.jpg" alt="Дизайн уединенности" width="692" height="448">
+        </picture>
       </div>
-      <h1 class="lead__title">Обновите ванную<br> комнату и получите<br> бонус</h1>
-      <div class="lead__footer">
-        <div class="lead__image-wrapper">
-          <img src="./img/lead-offer.png"
-               alt="Купите сантехнику - бесплатная подписка на Матч Премьер"
-               width="814"
-               height="447"
-          />
-        </div>
-        <div class="lead__text-wrapper">
-          <p>Купите сантехнику AM.PM</p>
-          <p>Получите в подарок <br>бесплатную подписку<br> <strong>на 30 дней</strong></p>
-        </div>
+      <div class="lead__text-wrapper lead__text-wrapper--right">
+        <h2 class="lead__title">Дизайн с <br>философией хюгге</h2>
+        <p class="lead__subtitle">Место абсолютной приватности, подчиненное функциональности.</p>
+        <p class="lead__text">
+          Ваша уникальность достойна лучшего обрамления.
+          Создайте индивидуальный интерьер для ванной и туалетной комнаты,
+          наши дизайнеры помогут в этом.
+          Реализация мечты – с «Сантехникой-Онлайн».
+        </p>
+      </div>
+    </div>
+    <div class="lead__wrapper container">
+      <div class="lead__text-wrapper lead__text-wrapper--left">
+        <h2 class="lead__title">Исключительное качество по доступной цене</h2>
+        <p class="lead__subtitle">Место абсолютной приватности, подчиненное функциональности.</p>
+        <p class="lead__text">
+          Ваша уникальность достойна лучшего обрамления.
+          Создайте индивидуальный интерьер для ванной и туалетной комнаты,
+          наши дизайнеры помогут в этом.
+          Реализация мечты – с «Сантехникой-Онлайн».
+        </p>
+      </div>
+      <div class="lead__image-wrapper">
+        <picture>
+          <source media="(max-width: 767px)" srcset="./img/lead-2--mobile.jpg">
+          <source media="(max-width: 1023px)" srcset="./img/lead-2--tablet.jpg">
+          <img src="./img/lead-2.jpg" alt="Качество по доступной цене" width="692" height="448">
+        </picture>
       </div>
     </div>
   </section>
   <section class="offer">
-    <a
-      href="https://santehnika-online.ru/akcii/bonusy_ot_am_pm/?PAGEN_1=2"
-      class="button button__offer">
-      Выбрать товары
-    </a>
-    <a href="#" class="offer__link">Условия акции</a>
+    <picture>
+      <source media="(max-width: 767px)" srcset="./img/offer--mobile.jpg">
+      <source media="(max-width: 1023px)" srcset="./img/offer--tablet.jpg">
+      <img src="./img/offer.jpg" alt="Бесплатная подписка!" height="384" width="1440">
+    </picture>
+
+    <div class="offer__content">
+      <div class="offer__text-wrapper container">
+        <h2>Бесплатная <br> подписка в подарок!</h2>
+        <p>Популярный шведский стриминговый сервис теперь и в России!
+          Слушай любимую музыку, аудиокниги и подкасты вместе
+          со STWORKI by damixa.
+        </p>
+      </div>
+    </div>
   </section>
-  <section class="products">
-    <div class="products__wrapper container container--less-border">
-      <h2 class="products__title">Выбирайте сантехнику AM.PM<br> со скидками до 50%</h2>
-      <ul class="products__list">
-        <li class="goods">
-          <a class="goods__item" href="">
-            <span class="goods__discount-mark">-20%</span>
-            <div class="goods__image-wrapper">
-              <img src="./img/item.jpg"
-                   alt="Смеситель для раковины"
-                   width="255"
-                   height="255"
-              />
-            </div>
-            <div class="goods__text-wrapper">
-              <p class="goods__series">Inspire V2.0</p>
-              <h3 class="goods__category">Смесители для раковины</h3>
-            </div>
+  <section class="goods container">
+    <div class="goods__wrapper swiper-container">
+      <div class="goods__controls">
+        <div class="goods__collection-name">
+          <p class="goods__tooltip">Коллекция</p>
+          <h2 class="goods__title">Дублин</h2>
+        </div>
+        <a href="#" class="goods__more">В коллекцию</a>
+      </div>
+      <ul class="goods__list swiper-wrapper">
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+      </ul>
+    </div>
+    <div class="goods__wrapper swiper-container">
+      <div class="goods__controls">
+        <div class="goods__collection-name">
+          <p class="goods__tooltip">Коллекция</p>
+          <h2 class="goods__title">Хельсинки</h2>
+        </div>
+        <a href="#" class="goods__more">В коллекцию</a>
+      </div>
+      <ul class="goods__list swiper-wrapper">
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+      </ul>
+    </div>
+    <div class="goods__wrapper swiper-container">
+      <div class="goods__controls">
+        <div class="goods__collection-name">
+          <p class="goods__tooltip">Коллекция</p>
+          <h2 class="goods__title">Стокгольм</h2>
+        </div>
+        <a href="#" class="goods__more">В коллекцию</a>
+      </div>
+      <ul class="goods__list swiper-wrapper">
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+      </ul>
+    </div>
+    <div class="goods__wrapper swiper-container">
+      <div class="goods__controls">
+        <div class="goods__collection-name">
+          <p class="goods__tooltip">Коллекция</p>
+          <h2 class="goods__title">Кухонные смесители</h2>
+        </div>
+        <a href="#" class="goods__more">В коллекцию</a>
+      </div>
+      <ul class="goods__list swiper-wrapper">
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+        <li class="goods__item product swiper-slide">
+          <a href="#" class="product__image-wrapper">
+            <img src="./img/items/dublin-1.png" alt="Смеситель для раковины" width="218" height="218">
+          </a>
+          <a href="#" class="product__title">Смеситель для раковины</a>
+          <div class="product__content">
+            <p class="product__price">3 990 ₽</p>
+          </div>
+          <button class="product__buy" type="button">Купить</button>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div class="other-categories">
+    <div class="other-categories__wrapper container">
+      <h2 class="other-categories__title">Другие категории</h2>
+      <p class="other-categories__tooltip">Создайте уникальный дизайн вашей ванной <br> комнаты с готовыми решениями</p>
+      <ul class="other-categories__list">
+        <li>
+          <a href="#" class="other-categories__link">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./img/other-furniture--mobile.jpg">
+              <source media="(max-width: 1023px)" srcset="./img/other-furniture--tablet.jpg">
+              <img src="./img/other-furniture.jpg" alt="Мебель" width="360" height="300">
+            </picture>
+
+            <h3>Мебель</h3>
           </a>
         </li>
-        <li class="goods">
-          <a class="goods__item" href="">
-            <span class="goods__discount-mark">-20%</span>
-            <div class="goods__image-wrapper">
-              <img src="./img/item.jpg"
-                   alt="Смеситель для раковины"
-                   width="255"
-                   height="255"
-              />
-            </div>
-            <div class="goods__text-wrapper">
-              <p class="goods__series">Inspire V2.0</p>
-              <h3 class="goods__category">Смесители для раковины</h3>
-            </div>
+        <li>
+          <a href="#" class="other-categories__link">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./img/other-closet--mobile.jpg">
+              <source media="(max-width: 1023px)" srcset="./img/other-closet--tablet.jpg">
+              <img src="./img/other-closet.jpg" alt="Унитазы" width="360" height="300">
+            </picture>
+            <h3>Унитазы</h3>
           </a>
         </li>
-        <li class="goods">
-          <a class="goods__item" href="">
-            <span class="goods__discount-mark">-20%</span>
-            <div class="goods__image-wrapper">
-              <img src="./img/item.jpg"
-                   alt="Смеситель для раковины"
-                   width="255"
-                   height="255"
-              />
-            </div>
-            <div class="goods__text-wrapper">
-              <p class="goods__series">Inspire V2.0</p>
-              <h3 class="goods__category">Смесители для раковины</h3>
-            </div>
-          </a>
-        </li>
-        <li class="goods">
-          <a class="goods__item" href="">
-            <span class="goods__discount-mark">-20%</span>
-            <div class="goods__image-wrapper">
-              <img src="./img/item.jpg"
-                   alt="Смеситель для раковины"
-                   width="255"
-                   height="255"
-              />
-            </div>
-            <div class="goods__text-wrapper">
-              <p class="goods__series">Inspire V2.0</p>
-              <h3 class="goods__category">Смесители для раковины</h3>
-            </div>
-          </a>
-        </li>
-        <li class="goods">
-          <a class="goods__item" href="">
-            <span class="goods__discount-mark">-20%</span>
-            <div class="goods__image-wrapper">
-              <img src="./img/item.jpg"
-                   alt="Смеситель для раковины"
-                   width="255"
-                   height="255"
-              />
-            </div>
-            <div class="goods__text-wrapper">
-              <p class="goods__series">Inspire V2.0</p>
-              <h3 class="goods__category">Смесители для раковины</h3>
-            </div>
-          </a>
-        </li>
-        <li class="goods">
-          <a class="goods__item" href="">
-            <span class="goods__discount-mark">-20%</span>
-            <div class="goods__image-wrapper">
-              <img src="./img/item.jpg"
-                   alt="Смеситель для раковины"
-                   width="255"
-                   height="255"
-              />
-            </div>
-            <div class="goods__text-wrapper">
-              <p class="goods__series">Inspire V2.0</p>
-              <h3 class="goods__category">Смесители для раковины</h3>
-            </div>
-          </a>
-        </li>
-        <li class="goods">
-          <a class="goods__item" href="">
-            <span class="goods__discount-mark">-20%</span>
-            <div class="goods__image-wrapper">
-              <img src="./img/item.jpg"
-                   alt="Смеситель для раковины"
-                   width="255"
-                   height="255"
-              />
-            </div>
-            <div class="goods__text-wrapper">
-              <p class="goods__series">Inspire V2.0</p>
-              <h3 class="goods__category">Смесители для раковины</h3>
-            </div>
-          </a>
-        </li>
-        <li class="goods">
-          <a class="goods__item" href="">
-            <span class="goods__discount-mark">-20%</span>
-            <div class="goods__image-wrapper">
-              <img src="./img/item.jpg"
-                   alt="Смеситель для раковины"
-                   width="255"
-                   height="255"
-              />
-            </div>
-            <div class="goods__text-wrapper">
-              <p class="goods__series">Inspire V2.0</p>
-              <h3 class="goods__category">Смесители для раковины</h3>
-            </div>
+        <li>
+          <a href="#" class="other-categories__link">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./img/other-shower--mobile.jpg">
+              <source media="(max-width: 1023px)" srcset="./img/other-shower--tablet.jpg">
+              <img src="./img/other-shower.jpg" alt="Душевые ограждения" width="360" height="300">
+            </picture>
+            <h3>Душевые ограждения</h3>
           </a>
         </li>
       </ul>
-      <div class="products__buttons-wrapper">
-        <a
-          href="https://santehnika-online.ru/search/?q=am+pm&filter=7qRcb&strategy=vectors_strict%2Czero_queries"
-          class="button button__products">
-          Перейти к покупкам
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="brand">
-    <div class="brand__wrapper container container--less-border">
-      <div class="brand__text-wrapper">
-        <h2>Подарите себе эмоции</h2>
-        <p>Изделия европейского бренда AМ.PM — синоним стиля и качества.
-          Бренд, объединивший лучшие тенденции скандинавского и итальянского дизайна с силой
-          немецкой инженерной мысли, узнаваем в России и во всем мире.
-          Откажитесь от утилитарного назначения сантехники в пользу эмоционального дизайна,
-          окружите себя поистине красивыми вещами.
-        </p>
-      </div>
-    </div>
-  </section>
-  <div class="popup">
-    <div class="popup__inner">
-      <button class="popup__close" type="button"></button>
-      <div class="popup__wrapper">
-        <h3>Условия акции</h3>
-        <p>
-          Для получения 30-дневной подписки на телеканал «Матч Премьер» за 1 рубль купите товары,
-          участвующие в акции. Сроки проведения акции – с 1 сентября по 30 октября 2020 г.
-          Акция распространяется на товары, участвующие в других акциях,
-          и суммируется с другими скидками.
-        </p>
-        <p>Акция действительна только для физических лиц.</p>
-      </div>
     </div>
   </div>
 </main>
 
-<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 
 </html>
